@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="organic products, areca plates, areca products, honey, ghee, biodegradable disposals, natural products, Healthy Bharat, Kiran Rathod, Eco friendly,  Hyderabad Entrepreneur, Young entrepreneur">
+    <meta name="description" content="Healthy Bharat helps people remember and get back to the ethnic ways of living that are taught by our age-old saints. We are selling a wide range of Eco-Friendly tableware like plates, cups, bowls, glasses, spoons and more for our day-to-day activities and for all kinds of occasions.">
+    <meta name="site_name" content="Healthy Bharat">
+    <meta name="url" content="www.healthybharath.com">
+    <meta name="tittle" content="healthybharat: profile page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Avinash Gummadi, Sai kumar Avu">
+    <title>My Profile | Healthy Bharat</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <!--firebase database for login, signup-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+    <script type="text/javascript" src="../javascript/profile.js"></script>
+
+    <link rel="stylesheet" href="../css/my_profile.css" type="text/css">
+  </head>
+  <body>
+    <div class="container em_profile">
+      <div class="profile_head">
+      <div class="img_container">
+        <img src="../images/profile_icon4.png" alt="Profile pic">
+         <!-- <div class="file btn btn-lg btn-primary">
+          Change Photo<input type="file" name="file" onchange="chooseFile(event)">
+        </div> -->
+      </div>
+      <div class="profile">
+        <h1>My Profile</h1>
+        <h2 id="profile_name"> </h2>
+        <h3 id="profile_email"> </h3>
+      </div>
+      <div class="edit_profile">
+        <span onclick="window.location.href='../index.html'" class="close">&times;</span>
+        <!-- <input type="submit" class="profile-edit-btn" name="editbutton" value="Edit Profile"/> -->
+      </div>
+      </div>
+      <hr>
+      <div class="profile_tail">
+      <div class="navbar">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./products.html">PRODUCTS</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="user_details">
+        <div class="detail_row">
+          <div class="detail_col atr_bold">
+            <p>Name</p>
+          </div>
+          <div class="detail_col">
+            <p id="profile_name1"> </p>
+          </div>
+        </div>
+        <div class="detail_row">
+          <div class="detail_col atr_bold">
+            <p>Email</p>
+          </div>
+          <div class="detail_col">
+            <p id="profile_email1"> </p>
+          </div>
+        </div>
+        <div class="detail_row">
+          <div class="detail_col atr_bold">
+            <p>Phone</p>
+          </div>
+          <div class="detail_col">
+            <p id="profile_phone"> </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div><!--container ends-->
+  </body>
+</html>

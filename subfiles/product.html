@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="organic products, areca plates, areca products, honey, ghee, biodegradable disposals, natural products, Healthy Bharat, Kiran Rathod, Eco friendly,  Hyderabad Entrepreneur, Young entrepreneur">
+        <meta name="description" content="Healthy Bharat helps people remember and get back to the ethnic ways of living that are taught by our age-old saints. We are selling a wide range of Eco-Friendly tableware like plates, cups, bowls, glasses, spoons and more for our day-to-day activities and for all kinds of occasions.">
+        <meta name="site_name" content="Healthy Bharat">
+        <meta name="url" content="www.healthybharath.com">
+        <meta name="tittle" content="healthybharat: products">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="Avinash Gummadi, Sai kumar Avu">
+        <title>Products|healthybharat</title>
+        <link rel="icon" href="../images/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <style media="screen">
+          .modal-backdrop{display: none !important;}
+        </style>
+        <!--cart libaries-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        <!--firebase database for login, signup-->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script type="text/javascript" src="../javascript/login.js"></script>
+        <link rel="stylesheet" href="../css/product.css" type="text/css">
+  </head>
+  <body>
+    <div class="root">
+    <header>
+      <div id="myDropdown" class="profile_icon">
+        <a class="dropdown-item" href="./my_profile.html">My profile</a>
+        <!-- <a class="dropdown-item" href="#orders">My orders</a> -->
+        <a class="dropdown-item" href="#logout" onclick="LogOut()">Logout</a>
+      </div>
+      <div class="container mobile_container">
+        <div class="flex_head">
+        <!-- <div class="hg-cart"></div> -->
+        <div class=".logo_class">
+          <a href="../index.html" class="logo_link"><img src="../images/logo.png" alt="healthy bharat logo" class="logo"></a>
+        </div>
+        <h3 class="mobile_heading">Healthy Bharat</h3>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="main_nav"><!--navbar collapse-->
+
+          <div class="offcanvas-header mt-3">
+            <button class="btn btn-outline-danger btn-close float-right">&times</button>
+          </div>
+
+          <ul class="navbar-nav menu" id="hightlight_nav">
+            <li class="nav-item"> <a class="nav-link" href="../index.html">HOME</a> </li>
+            <li class="nav-item active">
+              <!-- <a class="nav-link" href="./subfiles/product.html" onclick="products()">PRODUCTS</a> -->
+              <a class="nav-link" href="product.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a class="nav-link" href="./blog.html"> BLOG</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT</a></li>
+            <li class="nav-item login_mobile"><a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" id="login_mob">LOGIN</a></li>
+            <li class="nav-item profile_phone">
+            <a class="nav-link dropbtn" href="#" onclick="profile_mobile()" id="username_mob"></a>
+              <ul class="dropdown_content" id="drop_down">
+                  <li><a class="dropdown-item" href="./my_profile.html">My profile</a></li>
+                  <li><a class="dropdown-item" href="#logout" onclick="LogOut()">Logout</a></li>
+              </ul>
+          </li>
+          </ul>
+      </div> <!-- navbar-collapse.// -->
+    </nav>
+    <div class="dropdown" id="menuflow">
+    <button class="profile_icon_box dropbtn" onclick="my_profile()" id="profile">
+      <div class="profile_image">
+        <img id="img2" src="../images/profile_icon4.png">
+      </div>
+      <div class="user_name" id="user_name"></div>
+    </button>
+    </div>
+    <div class="login" id="login">
+    <!--if login not works--><button class="button_1" onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+      <div id="id01" class="login_signup_form">
+      <div class="login_modal animate" method="post">
+          <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+              <img src="../images/avatar.png" alt="login page avatar" class="avatar"><br><br>
+          </div>
+          <div class="form_container">
+            <label>Email </label>
+            <input type="email" id="emailid" placeholder="Enter email" name="username" required><br>
+            <label>Password </label>
+            <input type="password" id="password-field" placeholder="Enter Password" name="password" required><span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span><br>
+            <p class="error_message1" id="error_message1">Wrong email or password</p>
+            <button type="submit" onclick="login()">Login</button><br>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_1"> Cancel</button>
+            <span class="psw"><a href="./forgot.html" target="_blank">Forgot Password</a></span><br><br>
+            No account yet?<span onclick="document.getElementById('id01').style.display='none';pageRedirect()" class="login2signup">Create an account</span>
+          </div>
+      </div>
+    </div><!--id01, login_form div ends-->
+    </div>
+    <div class="cart">
+      <a href="#" data-toggle="modal" data-target="#cart" class="cart_lap"><img src="../images/cart2.png" alt="cart symbol" class="cart_img"><!--<span class="total-count"></span>--></a>
+      <a href="./mob_cart.html" class="cart_mob"><img src="../images/cart2.png" alt="cart symbol" class="cart_img"></a>
+    </div>
+    </div>
+    </div><!--container-->
+    </header>
+    <main class="root-body">
+    <section>
+      <div class="container mobile_container">
+        <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <img src="../images/cart_secure.png" alt="cart secure label">
+            <span class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </span>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="checkout()">Check Out</button>
+            <!-- <button type="button" class="btn btn-primary"><a href="https://pmny.in/QIcPa9PY4cbw" target="_blank">Order now</a></button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!--container ends-->
+    </section>
+      <section id="products_display">
+        <div class="container mobile_container">
+          <div class="row1_products">
+            <div class="box_product">
+              <a href="./areca_products.html">
+                <img class="diagonal" src="../images/set_of_plates.png" alt="Areca Products">
+                <h2>Areca Products</h2>
+            </a>
+            </div>
+            <div class="box_product">
+              <a href="./organic_products.html">
+              <img class="diagonal" src="../images/honey_ghee_img.png" alt="Organic Products">
+              <h2>Organic Products</h2>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+      <footer id="main">
+        <div class="container mobile_container">
+          <div class="contact">
+            <address>
+              <h4>Address:</h4>
+              <p>Healthy Bharat Organic Products Private Limited<br>12-5-55/1/T-2, Samskruthi Heaven APTS, Vijayapuri,<br>Tarnaka Hyderabad, Rangareddi-500017 Telangana</p>
+              <p class="copyrights">All rights reserved 2021 @ Healthy Bharat</p>
+            </address>
+            <div class="tel_email">
+              <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=healthybharatinfo@gmail.com&tf=1" target="_blank"><img src="../images/gmail_icon.webp" alt="gmail">healthybharatinfo@gmail.com</a><br>
+              <a href="tel:7277744777"><img src="../images/phone_icon.webp" alt="phone no:">7277744777</a>
+            </div>
+              <div class="social_media">
+                <h4>Contact us:</h4>
+                <a href="https://www.facebook.com/ihealthy.bharat" target="_blank"><img src="../images/facebook_icon.webp" alt="facebook"></a>
+                <a href="https://twitter.com/healthybharat1" target="_blank"><img src="../images/twitter_icon.webp" alt="twitter"></a>
+                <a href="https://www.instagram.com/healthybharatinfo/" target="_blank"><img src="../images/instagram_icon.webp" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/healthy-bharat-36b416209/" target="_blank"><img src="../images/linkedlin.png" alt="linkedlin" width="31px" height="31px"></a>
+              </div>
+          </div>
+        </div><!--container ends-->
+      </footer>
+    </div>
+      <div class="container mobile_container">
+        <div class="fix_me">
+          <a href="https://wa.me/919052223007?text=Hi, we are glad to meet you" target="_blank" rel="noopener"><img src="../images/whatsapp_icon.png" alt="whatsapp"></a>
+        </div>
+      </div>
+      <script type="text/javascript" src="../javascript/cart.js"></script>
+      <script type="text/javascript" src="../javascript/index.js"></script>
+      <script type="text/javascript">
+          function pageRedirect() {
+            window.location.href = "./signup.html";
+          }
+      </script>
+      <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function my_profile() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        var login_form = document.getElementById('id01');
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("profile_icon");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              } else if (event.target == login_form) {
+                login_form.style.display = "none";
+              }
+            }
+          }
+        }
+      </script>
+      <script type="text/javascript">
+      // show and hide password with eye icon
+      $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
+      });
+      </script>
+  </body>
+</html>

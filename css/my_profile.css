@@ -1,0 +1,185 @@
+/*high resolution laptops, pc's, systems etc*/
+@media (min-width:993px) {
+body{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.container{
+  padding: 3%;
+  margin: 7% 10% 10% 10%;
+  border-radius: 0.5rem;
+  background: #fff;
+  overflow: hidden;
+}
+.profile_head{
+  display: flex;
+}
+.btn-primary {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 30%;
+  transition: .5s ease;
+  opacity:	1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.profile{
+  flex: 43%;
+}
+.profile h1{
+  font-size: 50px;
+}
+.close{
+  color: #000;
+  font-size: 35px;
+  font-weight: bolder;
+}
+.close:hover, .close:focus{
+  color: red;
+  cursor:pointer;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 10%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.navbar{
+  float: left;
+  width: 30%;
+}
+.navbar li{
+  display: flex;
+  margin-top: 10px;
+}
+.navbar a{
+  color: #6a1b9a;
+  text-decoration: none;
+}
+.user_details{
+  float: left;
+  width: 70%;
+}
+.detail_row{
+  display: flex;
+}
+.detail_col{
+  flex: 50%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*Resolution for tab*/
+@media (min-width:769px) and (max-width:992px) {
+  body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  }
+  .container{
+    padding: 3%;
+    margin: 10% 10% 10% 10%;
+    border-radius: 0.5rem;
+    background: #fff;
+    overflow: hidden;
+  }
+  .profile_head{
+    display: flex;
+  }
+  .profile{
+    flex: 43%;
+  }
+  .profile h1{
+    font-size: 50px;
+  }
+  .close{
+    color: #000;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  .close:hover, .close:focus{
+    color: red;
+    cursor:pointer;
+  }
+  .navbar{
+    float: left;
+    width: 30%;
+  }
+  .navbar li{
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbar a{
+    color: #6a1b9a;
+    text-decoration: none;
+  }
+  .user_details{
+    float: left;
+    width: 70%;
+  }
+  .detail_row{
+    display: flex;
+  }
+  .detail_col{
+    flex: 50%;
+  }
+}
+
+
+
+
+
+
+/*Resolution phone*/
+@media (max-width:768px) {
+  body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  }
+  .container{
+    padding: 3%;
+    margin: 22% 10% 10% 10%;
+    border-radius: 0.5rem;
+    background: #fff;
+    overflow: hidden;
+  }
+   .img_container img{
+    display: block;
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+  }
+
+  .profile h1{
+    font-size: 20px;
+  }
+  .profile h2,h3{
+    font-size: 15px;
+  }
+  .close{
+    position: absolute;
+    right: 60px;
+    top: 85px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  .close:hover, .close:focus{
+    color: red;
+    cursor:pointer;
+  }
+  .navbar{
+    display: none;
+  }
+  .atr_bold p{font-weight: bold;}
+}

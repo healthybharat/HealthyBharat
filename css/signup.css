@@ -1,0 +1,337 @@
+
+/*high resolution laptops, pc's, systems etc*/
+@media (min-width:993px) {
+
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+  width: 100%;
+  padding: 6px 20px;
+  margin: 0px 0px;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+label{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.cancelbtn_2{
+  background-color: #f44336;
+  color: white;
+  padding: 9px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.signup_form{
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.signup_form a{
+  text-decoration: underline;
+  color: #000000;
+}
+.signup_modal{
+  background-color: #fefefe;
+  margin: 1% auto 15% auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  max-width: 40%;
+}
+.signup{
+  display: block;
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 60px;
+  float: right;
+}
+.success_container{
+  display: none; /*Hidden by default*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.success{
+  background-color: #fefefe;
+  margin: 15% auto 15% auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 30%;
+  height: 35%;
+  color: #000000;
+  padding: 27px;
+  text-align: center;
+}
+#success_btn{width: 50%;}
+.animate{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom{
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.signup{
+  display: block;
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 60px;
+  float: right;
+}
+.matter_adjust{
+  margin-top: 10%;
+}
+
+}
+
+
+
+
+/*Resolution for tab*/
+@media (min-width:769px) and (max-width:992px) {
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 9px 20px;
+  margin: 16px 0 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+/*Login page css starts from here*/
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+  width: 100%;
+  padding: 6px 20px;
+  margin: 0px 0px;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+label{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.cancelbtn_2{
+  background-color: #f44336;
+  color: white;
+  padding: 9px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.signup_form{
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.signup_form a{
+  text-decoration: underline;
+  color: #000000;
+}
+.signup_modal{
+  background-color: #fefefe;
+  margin: 1.5% auto 15% auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  max-width: 65%;
+}
+.signup{
+  display: block;
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 60px;
+  float: right;
+}
+.success_container{
+  display: none; /*Hidden by default*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.success{
+  background-color: #fefefe;
+  margin: 32% auto 15% auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 55%;
+  height: 30%;
+  color: #000000;
+  padding: 16px;
+  text-align: center;
+}
+.matter_adjust{
+  margin-top: 6%;
+}
+#success_btn{width: 59%;}
+.animate{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom{
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.signup{
+  display: block;
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 60px;
+  float: right;
+}
+}
+
+
+
+
+/*Resolution phone*/
+@media (max-width:768px) {
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 9px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  input[type=text], input[type=password], input[type=email], input[type=tel]{
+    width: 100%;
+    padding: 6px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  label{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .cancelbtn_2{
+    background-color: #f44336;
+    color: white;
+    padding: 9px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .signup_form{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .signup_form a{
+    text-decoration: underline;
+    color: #000000;
+  }
+  .signup_modal{
+    background-color: #fefefe;
+    margin: 15% auto 15% auto;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .signup{
+    display: block;
+    margin-top: 3.5%;
+    position: relative;
+    margin-left: 60px;
+    float: right;
+  }
+  .success_container{
+    display: none; /*Hidden by default*/
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .success{
+    background-color: #fefefe;
+    margin: 65% auto 15% auto;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    height: 24%;
+    color: #000000;
+    padding: 16px;
+    text-align: center;
+  }
+  .matter_adjust h5{
+    white-space: nowrap;
+    font-size: 17px;
+  }
+  .animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+  @-webkit-keyframes animatezoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+}
